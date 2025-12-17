@@ -1,0 +1,219 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: smaller;
+  color: #a7e8ff;
+}
+.hide {
+  display: none;
+}
+.titleP {
+  height: 40%;
+  width: 100%;
+  background-color: black;
+  background: linear-gradient(to right, #000000, #2a004e, #003d9e);
+  position: relative; /* Add this */
+}
+#cIndicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 67;
+  width: auto;
+  height: auto;
+}
+.info {
+  width: 70%;
+  height: 100%;
+}
+.row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.block {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(180deg, #d9ecff 0%, #ffffff 70%);
+}
+.rowHolder {
+  display: block;
+  height: 60%;
+  width: 100%;
+}
+
+.banner {
+  height: 100%;
+  width: auto;
+}
+.shadow {
+  filter: brightness(100%) drop-shadow(0px 10px 2px);
+}
+.shadow:hover {
+  transform: scale(1.1);
+}
+img {
+  width: auto;
+  height: 85%;
+}
+img:hover {
+  cursor: pointer;
+}
+img:active {
+  transform: scale(0.9);
+}
+div {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: black;
+}
+/* typed blocks */
+.grassBlock {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, #3fa34d, #7bd389, #c8ffb0);
+}
+.grassBlock:hover {
+  cursor: url("images/grassSymbolV2.png") 16 16, auto;
+}
+.fairyBlock {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, #ff9adf, #f7c6ff, #ffffff);
+}
+.fairyBlock:hover {
+  cursor: url("images/fairySymbolV2.png") 16 16, auto;
+}
+.waterBlock {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, #0077be, #00aaff, #a7e8ff);
+}
+.waterBlock:hover {
+  cursor: url("images/waterSymbolV2.png") 16 16, auto;
+}
+.fireBlock {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, #ff4d00, #ff8a00, #ffd56b);
+}
+.fireBlock:hover {
+  cursor: url("images/fireSymbolV2.png") 16 16, auto;
+}
+.electricBlock {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, #fff700, #ffd200, #ffb800);
+}
+.electricBlock:hover {
+  cursor: url("images/eletricSymbolV2.png") 16 16, auto;
+}
+/* Content centering */
+.top-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.bottom-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.left-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* corner content */
+.top-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.top-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.bottom-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 850px) {
+  .banner {
+    height: 66%;
+  }
+  .rowHolder {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .row {
+    display: block;
+    height: 100%;
+    width: 50%;
+  }
+  .block {
+    height: 25%;
+    width: 100%;
+  }
+  .grassBlock {
+    height: 25%;
+    width: 100%;
+  }
+  .waterBlock {
+    height: 25%;
+    width: 100%;
+  }
+  .fireBlock {
+    height: 25%;
+    width: 100%;
+  }
+  .electricBlock {
+    height: 25%;
+    width: 100%;
+  }
+  .fairyBlock {
+    height: 25%;
+    width: 100%;
+  }
+  img {
+    width: auto;
+    height: 75%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 48%;
+  }
+}

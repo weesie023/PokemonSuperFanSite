@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokemon Site V3</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Container for the first row of the 4 blocks-->
+    <div class="titleP center-content">
+      <!-- Stats and Button below -->
+      <div id="statsP" class="hide center-content">
+        <button id="X-stats" class="hide" onclick="closeInfo()">X</button>
+        <p id="TEXTStat"></p>
+      </div>
+      <img
+        id="bann"
+        class="banner"
+        src="images/pokemonBanner2.png"
+        onclick="playOP();"
+      />
+      <img id="cIndicator" src="images/clickIndicator.gif" />
+    </div>
+    <div class="rowHolder">
+      <div class="row">
+        <!--Blocks-->
+        <div class="grassBlock center-content">
+          <img
+            id="bulby"
+            src="images/betterBulb.png"
+            class="shadow"
+            onclick="bulbEvolve();"
+          />
+        </div>
+        <div class="waterBlock center-content water">
+          <img
+            id="squirty"
+            src="images/betterSquirtle.png"
+            class="shadow"
+            onclick="squirtEvolve();"
+          />
+        </div>
+        <div class="grassBlock center-content grass">
+          <img
+            id="lilTwig"
+            src="images/betterTwig.png"
+            class="shadow"
+            onclick="twigEvolve();"
+          />
+        </div>
+        <div class="fireBlock center-content fire">
+          <img
+            id="monke"
+            src="images/betterChimp.png"
+            class="shadow"
+            onclick="humanEvolution();"
+          />
+        </div>
+      </div>
+      <!--Container for the second row of the 4 blocks-->
+      <div class="row">
+        <!--Blocks-->
+        <div class="fireBlock center-content fire">
+          <img
+            id="charr"
+            src="images/betterCharr.png"
+            class="shadow"
+            onclick="charEvolve();"
+          />
+        </div>
+        <div class="electricBlock center-content electric">
+          <img src="images/betterPika.png" class="shadow" onclick="noop();" />
+        </div>
+        <div class="waterBlock center-content water">
+          <img
+            id="peng"
+            src="images/betterPimp.png"
+            class="shadow"
+            onclick="pengEvolve();"
+          />
+        </div>
+        <div class="fairyBlock center-content fairy">
+          <img
+            id="PLEASE"
+            src="images/betterFly.png"
+            class="shadow"
+            onclick="goatStatus();"
+          />
+        </div>
+      </div>
+    </div>
+
+    <audio src="sounds/charmeleonCry.mp3" id="charCry"></audio>
+
+    <audio src="sounds/cutieflyCry.mp3" id="cutieCry"></audio>
+
+    <audio src="sounds/ivysaurCry.mp3" id="ivyCry"></audio>
+
+    <audio src="sounds/monfernoCry.mp3" id="monCry"></audio>
+
+    <audio src="sounds/hellnah.mp3" id="pikaCry"></audio>
+
+    <audio src="sounds/prinplupCry.mp3" id="prinCry"></audio>
+
+    <audio src="sounds/tortleCry.mp3" id="tortleCry"></audio>
+
+    <audio src="sounds/wartortleCry.mp3" id="warCry"></audio>
+
+    <audio src="sounds/FIXEDopThemeSound.mp3" id="OPtheme"></audio>
+    <!-- Don't put anything below the script initialization unless
+    you don't need to reference it in the JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
